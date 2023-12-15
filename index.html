@@ -13,23 +13,31 @@
         <div class="title">
           <h2>our menu</h2>
           <!-- filter-button -->
-          <div class="btn-container">
-            <!-- <button class="filter-btn" type="button" data-name="All"> All
-
-            </button>
-            <button class="filter-btn" id="mydiv" type="button" data-name="Breakfast"> Breakfast
-
-            </button>
-            <button class="filter-btn" type="button"  data-name="Lunch"> Lunch
-
-            </button>
-            <button class="filter-btn" type="button"  data-name="Dinner"> Dinner
-
-            </button> -->
-          </div>
+          <div class="btn-container"></div>
           <div class="underline"></div>
         </div>
-        <div class="section-center">
+        <div class="section-center"></div>
+        <!-- Add Recipe Form -->
+        <div class="form-container">
+          <h2>Add a Recipe</h2>
+          <form id="addRecipeForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required />
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required />
+
+            <label for="img">Image URL:</label>
+            <input type="text" id="img" name="img" required />
+
+            <label for="desc">Description:</label>
+            <textarea id="desc" name="desc" required></textarea>
+
+            <button type="submit">Add Recipe</button>
+          </form>
         </div>
     </section>
     <script src="script.js"></script>
